@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <script>
+        function onmouseOver() {
+            confirm('input password');
+        }
+
+        function onmouseClick() {
+            document.write('mouse click');
+        }
+
+        function loadPage() {
+            alert('page is loading......');
+        }
+
+        function isnumber() {
+            var dom = document.getElementById('text');
+            if (dom.value == '' || isNaN(dom.value)){
+                alert('not number');
+                dom.value = '';
+            }else  {
+                alert('success');
+            }
+        }
+
+        window.onbeforeunload =  onunload_message();
+        function onunload_message() {
+            alert('are you sure unload');
+        }
+    </script>
+</head>
+< onload="loadPage()">
+密码:<input type="password" onmouseover="onmouseOver()">
+<input type="button" value="sure" onclick="onmouseClick()">
+<br>
+<input type="text" id="text"> <input type="button" value="submmit" onclick="isnumber()">
+</body>
+</html>

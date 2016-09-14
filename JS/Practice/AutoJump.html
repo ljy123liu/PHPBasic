@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoJump</title>
+    <script>
+        var num=5;
+
+        (function setTime() {
+            var second=document.getElementById("second");
+            second.innerHTML = num;
+            if (num==1) {
+                clearTimeout(i)
+                window.location.href="http://www.imooc.com";
+            }
+            else {
+                num--;
+            }
+            i=setTimeout(setTime,1000);
+        })();
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+<h2>操作成功</h2>
+<>
+</body>
+</html>

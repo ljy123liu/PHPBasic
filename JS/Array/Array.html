@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+
+        //concat数组合并
+        var arr1 = [1,2];
+        var arr2 = ['a','b'];
+        var arr3 = arr1.concat(arr2);
+        document.write('concat:'+arr3+'</br>');
+
+        //join:数组元素连接成字符串
+        var joinArr = new Array(3);
+        joinArr = [1,2,3,4,5,6];
+        document.write('join:'+joinArr.join()+'</br>');
+        document.write('joinWith .:'+joinArr.join('.')+'</br>');
+        document.write('joinWith"":'+joinArr.join('')+'</br>');
+
+        //reserver翻转
+        var reserverArr = joinArr.reverse();
+        document.write('reverse:'+reserverArr+'</br>');
+
+        //slice选中数组中元素(begin,end)
+        var sliceArr = joinArr.slice(2,4);
+        document.write('slice:'+sliceArr+'</br>');
+
+        //sort
+        var sortStr = ['c','a','g','h','r'];
+        var sortNum = [1,5,7,3,6,2,9];
+        //升序
+        document.write('sortStr:'+sortStr.sort()+'</br>');
+        document.write('sortNum:'+sortNum.sort()+'</br>');
+
+        //降序
+        function sortNumber(a,b) {
+            return b - a;
+        }
+        document.write('sortNumDown:'+sortNum.sort(sortNumber)+'</br>');
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

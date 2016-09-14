@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <!--<script src="HelloWorld.js"></script>-->
+    <script>
+        function showAlert() {
+            alert("test");
+        }
+
+        function confirmSelect() {
+            var sex = "is man?"
+            confirm(sex);
+            if(sex==true){
+                document.write("you are man");
+            }else {
+                document.write("you are woman");
+            }
+        }
+
+        function showPrompt() {
+            var age = prompt("your age");
+//            if (age.isNumber() == true){
+                if (age >= 90){
+                    document.write("good");
+                }else {
+                    document.write("bad");
+                }
+//            }
+        }
+
+        function showWindow() {
+            window.open("http://www.imooc.com","_blank","width=400,height=300,menubar=yes,toolbar=yes");
+        }
+
+        function changeStyle() {
+            var p = document.getElementById("style");
+            p.style.fontSize = '20px';
+            p.style.color = 'red';
+            p.style.backgroundColor = 'yellow';
+        }
+
+        function showElement() {
+            document.getElementById("display").style.display='block';
+        }
+
+        function hideElement() {
+            document.getElementById("display").style.display='none';
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="click" onclick="showAlert()">
+        <input type="button" value="sex" onclick="confirmSelect()">
+        <input type="button" value="prompt" onclick="showPrompt()">
+        <input type="button" value="window" onclick="showWindow()">
+        <input type="button" value="changeStyle" onclick="changeStyle()">
+        <input type="button" value="showElement" onclick="showElement()">
+        <input type="button" value="hideElement" onclick="hideElement()">
+    </form>
+
+    <p id="style">changeStyle</p>
+    <p id="display">display</p>
+</body>
+</html>

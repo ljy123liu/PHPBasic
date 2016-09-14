@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox</title>
+</head>
+<body>
+    <form>
+        <table width="574" border="1" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="red">
+            <tr>
+                <td height="35" colspan="35" bgcolor="#faebd7"><span class="STYLE1">订单管理</span></td>
+            </tr>
+            <tr>
+                <td width="77" align="center" bgcolor="#5f9ea0">说明:</td>
+                <td width="389"><textarea name="readme" cols="50" rows="10" id="readme"></textarea></td>
+                <td width="63" height="33" bgcolor="#6495ed" class="STYLE2">
+                    <a href="#" onClick="javascript:document.getElementById('readme').value=''; return false;"> <img src="images/14.jpg" width="60" height="25" border="0"/></a>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="6" align="center" bgcolor="yellow">操作:</td>
+                <td height="30" colspan="2" align="left" bgcolor="green"><input name="PHP3" type="checkbox" id="PHP3" value="PHP" />
+                    C++编程词典全能版
+                </td>
+
+                <td height="30" colspan="2" align="left" bgcolor="green"><input name="PHP3" type="checkbox" id="PHP4" value="PHP" />
+                    VC编程词典钻石版
+                </td>
+                <td height="30" colspan="2" align="left" bgcolor="green"><input name="PHP3" type="checkbox" id="PHP5" value="PHP" />
+                    PHP编程词典体验版
+                </td>
+                <td height="30" colspan="2" align="left" bgcolor="green"><input name="PHP3" type="checkbox" id="PHP6" value="PHP" />
+                    C#编程词典标准版
+                </td>
+                <td height="30" colspan="2" align="left" bgcolor="green"><input name="PHP3" type="checkbox" id="PHP7" value="PHP" />
+                    VB编程词典全能版
+                </td>
+                <td height="30" colspan="2" align="left" bgcolor="green"><input name="PHP3" type="checkbox" id="PHP8" value="PHP" />
+                    ASP编程词典体验版
+                </td>
+            </tr>
+            <tr>
+                <td colspan="15" align="center" bgcolor="blue">
+                    <img src="images/_01.jpg" onclick="checkAll(form1,status)" width="60" height="25" >
+                    <img src="images/_08.jpg" onclick="switchAll(form1,status)" width="60" height="25" >
+                    <img src="images/_11.jpg" onclick="uncheckAll(form1,status)" width="60" height="25" >
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

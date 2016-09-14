@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <script>
+        //定时器
+        var atTime;
+        function clock() {
+            var time = new Date();
+            atTime= time.getHours()+':'+time.getMinutes()+':'+time.getSeconds();
+            document.getElementById('text').value = atTime;
+        }
+        var i = setInterval(clock,100);
+
+        //延时执行
+        function doAfter() {
+            setTimeout(alert('setTimeOut',2000));
+        }
+    </script>
+</head>
+<body>
+
+    <input id="text" />
+
+    //取消定时器
+    <input type="button" value="stop" onclick="clearInterval(i)" />
+
+    //延时执行
+    <input type="button" value="setTimeOut" onclick="doAfter()">
+</body>
+</html>

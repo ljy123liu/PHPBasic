@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+    <script>
+        var lowStr = 'Abcdefg';
+        var upStr = 'qWERTY';
+        var str1 = lowStr.toUpperCase();
+        var str2 = upStr.toLowerCase();
+        document.write(str1+'</br>');
+        document.write(str2+'</br>');
+
+        //提取字符
+        var  char1 = lowStr.charAt(1);
+        document.write(char1+'</br>');
+
+        //提取字符第一次出现所在位置
+        var index = upStr.indexOf('R');
+        document.write("char at index:"+index+'</br>');
+
+        var www = 'www.baidu.com';
+        var charArray = www.split('.');
+        var char1 = www.split('.',1);
+        document.write("charArray:"+charArray+'</br>');
+        document.write("split1:"+char1+'</br>');
+
+        //从某个位置提取到某个位置
+        var subStr1 = 'abcdefghijk';
+        var sub = subStr1.substring(2,4);
+        document.write("sub1:"+sub+'</br>');
+
+        //提取多少位
+        var subStr2 = 'abcdefghijk';
+        var sub2 = subStr2.substr(2,4);
+        document.write("sub2:"+sub2+'</br>');
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

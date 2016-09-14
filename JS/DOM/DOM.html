@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <!--文档对象模型DOM（Document Object Model）
+    定义访问和处理HTML文档的标准方法。
+    DOM 将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。-->
+
+
+    <!--1. ID 是一个人的身份证号码，是唯一的。所以通过getElementById获取的是指定的一个人。
+        2. Name 是他的名字，可以重复。所以通过getElementsByName获取名字相同的人集合。
+        3. TagName可看似某类，getElementsByTagName获取相同类的人集合。如获取小孩这类人，getElementsByTagName("小孩")。-->
+
+</head>
+<body>
+<h2 id="con" title="Just Do IT">I love JavaScript</H2>
+<p> JavaScript使网页显示动态效果并实现与用户交互功能。</p>
+<ul>
+    <li>javascript</li>
+    <li>HTML/CSS</li>
+    <li>jQuery</li>
+</ul>
+
+<script>
+    var mychar = document.getElementById('con');
+    mychar.style.color = 'red';
+    mychar.style.backgroundColor = '#ccc';
+    //mychar.style.display = 'none';
+
+    var elementNodeAttribute1 = mychar.getAttribute('id');
+    var elementNodeAttribute2 = mychar.getAttribute('title');
+    document.write('h2:id='+elementNodeAttribute1+'</br>');
+    document.write('h2:title='+elementNodeAttribute2+'</br>');
+
+
+    var node=document.getElementsByTagName("li");
+
+    for(var i=0;i<node.length;i++) {
+
+        document.write('nodeName:'+node[i].nodeName+"</br>");
+
+        document.write('nodeValue:'+node[i].nodeValue+"</br>");
+
+        document.write('nodeType:'+node[i].nodeType+"</br>");
+    }
+
+</script>
+
+</body>
+</html>

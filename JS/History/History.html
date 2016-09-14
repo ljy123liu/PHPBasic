@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+    <script>
+        //history
+        var historyLenght = window.history.length;
+        var h2 = window.historyLenght;
+        document.write('historyLenght:'+h2+'</br>');
+
+        //goBack
+        function goBack() {
+            window.history.back();
+        }
+
+        //goForward
+        function goForward() {
+            window.history.forward();
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="goBack" onclick="goBack()">
+</body>
+</html>

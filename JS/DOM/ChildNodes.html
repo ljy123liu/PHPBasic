@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChildNodes</title>
+</head>
+<body>
+<div id="test">
+    javascript
+    <p>javascript</p>
+    <div>jQuery</div>
+    <h5>PHP</h5>
+</div>
+<script>
+    var x=document.getElementsByTagName("div")[0].childNodes;
+    for(i=0;i<x.length;i++){
+        document.write("节点类型:"+x[i].nodeName+x[i].nodeType+x[i].nodeValue+"<br>");
+    }
+
+//first
+    var node=document.getElementById("test");
+    document.write('firstNode:'+node.firstElementChild.nodeName+'</br>');
+    document.write('lastNode:'+node.lastElementChild.nodeName+'</br>');
+
+
+</script>
+</body>
+</html>
