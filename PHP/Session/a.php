@@ -7,6 +7,7 @@
  */
 session_start();
 //
+echo 'start'."<p>";
 if (session_id()){
     echo session_id();
 } else {

@@ -15,8 +15,9 @@ class IndexController extends Controller {
 //        echo 'index'.'<br>';
 
 
-        $this->listActionsUrl();
-
+//        $this->listActionsUrl();
+        
+        echo "hello world";
 
 
     }
