@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link href="Frameworks/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="Frameworks/jquery-3.1.1.min.js"></script>
+    <script src="Frameworks/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+
+    <!-- 百度的静态资源库的 CDN 服务，访问速度更快、加速效果更明显、没有速度和带宽限制、永久免费 -->
+    <!--<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!--&lt;!&ndash; 可选的Bootstrap主题文件（一般不使用） &ndash;&gt;-->
+    <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>-->
+
+    <!--&lt;!&ndash; jQuery文件。务必在bootstrap.min.js 之前引入 &ndash;&gt;-->
+    <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+
+    <!--&lt;!&ndash; 最新的 Bootstrap 核心 JavaScript 文件 &ndash;&gt;-->
+    <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+<!--突显的正文-->
+<p class="lead">
+    故事讲述汤姆从小就是个玩牌高手，所以他的好朋友，肥皂、艾迪和培根决定各凑两万五千英镑，让汤姆去参加一场黑社会高额赌金的牌局。
+</p>
+<p>
+    <small>汤姆从头到尾不知情，其实整个赌金根本就是个大骗局。于是汤姆不但输光所有的钱，还倒欠赌场主人五十万英镑。汤姆在一个星期内不能还清，他和他朋友们的手指和他老爸的酒吧都将不保。汤姆一伙想尽各种可能的凑钱办法，最后决定抢劫隔壁的毒犯。</small>
+</p>
+<p>
+    <strong>而隔壁的毒犯同时也正计划抢劫他们的毒品供应商。汤姆一伙的计划听起来简单，但执行时却状况百出。突发的状况让这伙人不由得越陷越深。事情变得十分复杂，场面变得十分混乱。几个小混混发现整个事件已经发展到超出他们的想象，于是极力想逃脱，但是已经……</strong>
+</p>
+
+<em>斜体显示的文字</em>
+
+<p class="text-left">左对齐</p>
+<p class="text-center">居中对齐</p>
+<p class="text-right">右对齐</p>
+
+<p class="muted">从浩瀚的世界影史上选出100部电影，贴上“另类”的标签。</p>
+<p class="text-warning">1965年，弗里曼德将12位作家的作品编为一般短篇小说集。</p>
+<p class="text-error">低俗小说、猜火车和两杆老烟枪不是一类故事。</p>
+<p class="text-info">《两杆大烟枪》确实可谓是英伦黑色幽默的极品之作了。</p>
+<p class="text-success">绝！真TMD绝！不愧为《疯狂的石头》的妈妈！哈哈。</p>
+
+
+
+<abbr title="美国电视剧">美剧</abbr>
+
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+
+<address>
+    <strong>王皓和小雪科技有限公司</strong><br>
+    山东，济南<br>
+    经十西路 28723 号<br>
+    159 6577 9823
+</address>
+
+<address>
+    <strong>E-Mail</strong><br>
+    <a href="mailto:#">hello@example.com</a>
+</address>
+
+<ul class>
+    <li>java</li>
+    <li>php</li>
+    <li>oc</li>
+</ul>
+
+
+<p>language</p>
+<ol>
+    <li>swift</li>
+    <li>js</li>
+    <li>html</li>
+</ol>
+
+<code>UILabel *label = [[UILabel alloc] init];
+    label.text = @"sub";
+</code>
+
+<pre>
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"sub";
+</pre>
+
+<table class="table">
+    <tr>
+        <th>lan1:</th>
+        <th>java</th>
+    </tr>
+    <tr>
+        <th>lan2</th>
+        <th>js</th>
+    </tr>
+</table>
+
+<table class="table table-striped table-bordered table table-hover table-condensed">
+    <tr class="">
+        <th>分类</th>
+        <th>语言</th>
+    </tr>
+    <tr class="success">
+        <td>lan1:</td>
+        <td>java</td>
+    </tr>
+    <tr class="info">
+        <td>lan2</td>
+        <td>js</td>
+    </tr>
+    <tr class="warning">
+        <td>lan3</td>
+        <td>swift</td>
+    </tr>
+    <tr>
+        <td>lan4</td>
+        <td>oc</td>
+    </tr>
+</table>
+
+
+<label class="radio">
+    <input type="radio">男性
+</label>
+
+<label class="radio">
+    <input type="radio">女性
+</label>
+
+<label>
+    <input type="checkbox">男性
+</label>
+
+<label>
+    <input type="checkbox">女性
+</label>
+
+<label class="radio">
+    选项一
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+
+</label>
+<label class="radio">
+    选项二
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+</label>
+
+
+<label class="checkbox-inline">
+    <input type="checkbox"> youku
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox"> youku
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox"> youku
+</label>
+
+<br>
+<select>
+    <option>电影</option>
+    <option>写作</option>
+    <option>睡觉</option>
+    <option>喝酒</option>
+    <option>吹牛</option>
+</select>
+<br>
+<select multiple="multiple">
+    <option>电影</option>
+    <option>写作</option>
+    <option>睡觉</option>
+    <option>喝酒</option>
+    <option>吹牛</option>
+</select>
+
+<div class="input-append">
+    <input class="span2" id="appendedDropdownButton" type="text">
+    <div class="btn-group">
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+            搜索
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

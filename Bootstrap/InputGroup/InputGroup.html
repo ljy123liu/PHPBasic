@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InputGroup</title>
+    <link href="../Frameworks/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../Frameworks/jquery-3.1.1.min.js"></script>
+    <script src="../Frameworks/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="input-group input-group-lg">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" placeholder="username">
+</div>
+
+<div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" placeholder="username">
+</div>
+
+<div class="input-group input-group-sm col-lg-4">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" placeholder="username">
+</div>
+
+<div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" placeholder="address">
+      </span>
+    <input type="text" class="form-control" >
+</div>
+
+<div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" placeholder="home">
+      </span>
+    <input type="text" class="form-control" >
+</div>
+
+
+<br>
+<div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">搜索</button>
+      </span>
+    <input type="text" class="form-control" placeholder="Search for...">
+</div>
+
+<br>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">搜索</button>
+      </span>
+</div>
+
+
+<br>
+<div class="input-group">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">搜索<span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Google</a></li>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">搜狗</a></li>
+            <li class="divider"></li>
+            <li><a href="#">人民搜索</a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control" aria-label="...">
+</div>
+
+<div class="input-group">
+    <input type="text" class="form-control" aria-label="...">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">搜索<span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="#">Google</a></li>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">搜狗</a></li>
+            <li class="divider"></li>
+            <li><a href="#">人民搜索</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

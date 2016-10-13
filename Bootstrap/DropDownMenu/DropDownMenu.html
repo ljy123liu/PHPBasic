@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DropDownMenu</title>
+    <link href="../Frameworks/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../Frameworks/jquery-3.1.1.min.js"></script>
+    <script src="../Frameworks/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+        http://192.168.1.189
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li>
+            <a href="#">HTML</a>
+        </li>
+        <li role="presentation">
+            <a href="#">CSS</a>
+        </li>
+
+        <li role="presentation">
+            <a href="#">Javascript</a>
+        </li>
+        <li role="presentation">
+            <a href="#">AJAX</a>
+        </li>
+    </ul>
+</div>
+
+<br>
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle bg-success" id="dropdownMenu2" data-toggle="dropdown">
+        http://192.168.1.189
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+        <li class="dropdown-header">
+            静态页面(不可点击)
+        </li>
+
+        <li>
+            <a href="#">HTML</a>
+        </li>
+        <li role="presentation">
+            <a href="#">CSS</a>
+        </li>
+
+        <li class="dropdown-header">
+            动态页面(不可点击)
+        </li>
+
+        <li role="presentation">
+            <a href="#">Javascript</a>
+        </li>
+        <li role="presentation">
+            <a href="#">AJAX</a>
+        </li>
+    </ul>
+</div>
+
+<br>
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown">
+        http://192.168.1.189
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+        <li class="dropdown-header">
+            静态页面
+        </li>
+
+        <li>
+            <a href="#">HTML</a>
+        </li>
+        <li role="presentation">
+            <a href="#">CSS</a>
+        </li>
+
+        <li role="presentation" class="divider"></li>
+
+        <li class="dropdown-header">
+            动态页面
+        </li>
+
+        <li role="presentation">
+            <a href="#">Javascript</a>
+        </li>
+        <li role="presentation">
+            <a href="#">AJAX</a>
+        </li>
+    </ul>
+</div>
+
+<br>
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown">
+        http://192.168.1.189
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+        <li class="dropdown-header">
+            静态页面
+        </li>
+
+        <li>
+            <a href="#">HTML</a>
+        </li>
+        <li role="presentation">
+            <a href="#">CSS</a>
+        </li>
+
+        <li role="presentation" class="divider"></li>
+
+        <li class="dropdown-header">
+            动态页面
+        </li>
+
+        <li role="presentation">
+            <a href="#">Javascript</a>
+        </li>
+        <li role="presentation">
+            <a href="#">AJAX</a>
+        </li>
+        <li role="presentation" class="disabled">
+            <a role="menuitem" tabindex="-1" href="#">Bootstrap(开发中)</a></li>
+
+    </ul>
+</div>
+
+<div style="height:100px"></div>
+</body>
+</html>

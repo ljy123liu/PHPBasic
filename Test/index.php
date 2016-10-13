@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: liuyong
- * Date: 5/20/16
- * Time: 9:15 PM
+ * Date: 16/9/27
+ * Time: 下午2:05
  */
-define('APP_DEBUG',TRUE);
+define('APP_DEBUG', true);
 require '../thinkphp/ThinkPHP/ThinkPHP.php';

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        //这是为了防止文档在完全加载（就绪）之前运行 jQuery 代码。
+        $(document).ready(function(){
+            $("p#hide").click(function(){
+                $(this).hide();
+            });
+        });
+        
+        //选择器
+        $(document).ready(function () {
+            $("h1#jQuery").click(function () {
+                alert('pick element id');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h1.content").click(function () {
+                alert('pick element class');
+            })
+        })
+
+        $(document).ready(function () {
+            $("p#color").click(function () {
+                $(this).css("background-color","red");
+            })
+        })
+
+        $(document).ready(function () {
+            $("p#color").click(function () {
+                $(this).css("background-color","red");
+            })
+        })
+
+
+        $(document).ready(function () {
+            $("h1#doubleClick").dblclick(function () {
+                alert('double click');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#mouseover").mouseover(function () {
+                alert('mouseover');
+            })
+        })
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h2#mouseover").fadeToggle('fast');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#slide").click(function () {
+                $(this).slideToggle('slow');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#animate").click(function () {
+                $(this).animate({
+                    right:'250px',
+                    opacity:0.5,
+                    width:'150px',
+                    height:'30px'
+                });
+                $(this).css("background-color","red");
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#text").click(function () {
+                alert("Text: "+$('#text').html());
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#set_content").click(function () {
+                $("h2#set_content").text('内容变了');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#append").click(function () {
+                $(this).append('后面');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#append").click(function () {
+                $(this).prepend('前面');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#append").click(function () {
+                $(this).before('之前');
+            })
+        })
+
+        $(document).ready(function () {
+            $("h2#append").click(function () {
+                $(this).after('之后');
+            })
+        })
+
+    </script>
+</head>
+<body>
+<p id="color">If you click on me, I will disappear.</p>
+<p id="hide">test</p>
+<h1 id="doubleClick">doubleClick</h1>
+<h1 id="jQuery">jQuery</h1>
+<h1 class="content">main story</h1>
+<h2 id="mouseover">mouseover</h2>
+<button>fade</button>
+<h2 id="slide">slide</h2>
+<h2 id="animate">animate</h2>
+<h2 id="text">text value</h2>
+<h2 id="set_content">set content</h2>
+<h2 id="append">:追加内容:</h2>
+
+</body>
+</html>
