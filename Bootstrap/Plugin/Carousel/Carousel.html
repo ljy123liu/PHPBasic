@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>carousel</title>
+    <link href="../../Frameworks/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../Frameworks/jquery-3.1.1.min.js"></script>
+    <script src="../../Frameworks/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style>
+        div.item img{
+            width:100%;
+        }
+        div#carousel-example-generic{
+            width:20%;
+            margin:0 auto;
+        }
+        div#carousel-example-generic2{
+            width:20%;
+            margin:0 auto;
+        }
+        div#carousel-example-generic3{
+            width:20%;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="http://how2j.cn/study/lol1.jpg" >
+        </div>
+        <div class="item">
+            <img src="http://how2j.cn/study/lol2.jpg" >
+        </div>
+        <div class="item">
+            <img src="http://how2j.cn/study/lol3.jpg" >
+        </div>
+
+        <div class="item">
+            <img src="http://how2j.cn/study/lol4.jpg" >
+        </div>
+    </div>
+</div>
+
+<br>
+<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" data-interval="1000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="http://how2j.cn/study/lol1.jpg" >
+            <div class="carousel-caption">
+                LOL1
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://how2j.cn/study/lol2.jpg" >
+            <div class="carousel-caption">
+                LOL2
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://how2j.cn/study/lol3.jpg" >
+            <div class="carousel-caption">
+                LOL3
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="http://how2j.cn/study/lol4.jpg" >
+            <div class="carousel-caption">
+                LOL4
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic3" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="http://how2j.cn/study/lol1.jpg" >
+        </div>
+        <div class="item">
+            <img src="http://how2j.cn/study/lol2.jpg" >
+        </div>
+        <div class="item">
+            <img src="http://how2j.cn/study/lol3.jpg" >
+        </div>
+
+        <div class="item">
+            <img src="http://how2j.cn/study/lol4.jpg" >
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+    </a>
+
+</div>
+
+
+
+</body>
+</html>

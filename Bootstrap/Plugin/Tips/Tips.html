@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tips</title>
+    <link href="../../Frameworks/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../Frameworks/jquery-3.1.1.min.js"></script>
+    <script src="../../Frameworks/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<button class="btn btn-default" title="提示信息">非Bootstrap工具提示</button>
+<button style="margin-left:100px" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="提示信息">鼠标悬停</button>
+<button style="margin-right:100px" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="提示信息">鼠标悬停</button>
+<button style="margin-top:50px" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="提示信息">鼠标悬停</button>
+<button style="margin-bottom:50px" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="提示信息">鼠标悬停</button>
+
+<script>
+    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+</body>
+</html>
